@@ -20,8 +20,8 @@ int bz = Convert.ToInt32(Console.ReadLine());
 double result = Math.Round(Coordinate(ax, ay, az, bx, by, bz), 2, MidpointRounding.ToZero);
 Console.WriteLine(result);
 
-double Coordinate (int ax1, int ay2, int az3, int bx1, int by2, int bz3)
+double Coordinate(int ax1, int ay2, int az3, int bx1, int by2, int bz3)
 {
-    double coordinate = Math.Sqrt(Math.Pow((bx1-ax1),2)+Math.Pow((by2-ay2),2)+Math.Pow((bz3-az3),2));
+    double coordinate = Math.Sqrt(Math.Pow((bx1 - ax1), 2) + Math.Pow((by2 - ay2), 2) + Math.Pow((bz3 - az3), 2));
     return coordinate;
 }
